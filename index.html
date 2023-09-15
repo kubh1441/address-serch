@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:,">
+    <title>Address Search</title>
+</head>
+<body>
+    <h2>郵便番号検索APIを使って非同期処理を実装してみた。</h2>
+
+    <p>郵便番号の住所情報を取得します。例: 1000001</p>
+    <input type="text" id="postcodeInput">
+
+    <button id="sendRequestButton">APIにリクエストを送信</button>
+    <button id="resetButton">リセット</button>
+
+    <!--受け取ったJSONデータを表示するコンテナ-->
+    <div id="resultContainer">
+        <p>リクエストを送信するには、ボタンを押してください。</p>
+    </div>
+
+    <script src="addressSearch.js"></script>
+</body>
+</html>
